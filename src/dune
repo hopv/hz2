@@ -1,0 +1,10 @@
+
+(menhir 
+  (flags -v)
+   (modules parser))
+(ocamllex lexer)
+
+(executable
+ (name main)
+ (flags -w -27-40)
+ (libraries str))

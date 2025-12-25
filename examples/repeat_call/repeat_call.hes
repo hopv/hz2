@@ -1,0 +1,20 @@
+generated HES
+({
+repeat_q0_1 =μ  (λ f_q0_0. (λ f_q0_1. (λ x_. ((<=(x_, 0) /\ fin_q0_1) \/ (not <=(x_, 0) /\ ((((f_q0_1 x_) ((repeat_q0_1 f_q0_1) f_q0_1)) ((repeat_q0_1 f_q0_1) f_q0_1)) /\ (((repeat_q0_1 f_q0_1) f_q0_1) (x_ - 1))))))));
+fin_q0_1 =μ  True;
+sub_q0_1 =μ  (λ x_. (λ y_. (λ k_q0_0. (λ k_q0_1. (k_q0_1 (y_ - x_))))));
+g_q0_1 =μ  (λ z_. (λ x_. (((repeat_q0_1 (sub_q0_1 x_)) (sub_q0_1 x_)) z_)));
+input_q0_1 =μ  (λ x_. (λ k_q0_0. (λ k_q0_1. ((k_q0_1 x_) \/ (((input_q0_1 (x_ + 1)) k_q0_1) k_q0_1)))));
+main_q0_0 =ν  (λ n_. (((input_q0_1 0) (g_q0_1 n_)) (g_q0_1 n_)));
+},
+ (main_q0_0 n_))
+parametrized HES
+({
+main_q0_0 =ν  (λ repeat'_q0_1. (λ sub'_q0_1. (λ g'_q0_1. (λ input'_q0_1. (λ n_. (((input'_q0_1 0) (((g'_q0_1 repeat'_q0_1) sub'_q0_1) n_)) (((g'_q0_1 repeat'_q0_1) sub'_q0_1) n_)))))));
+input_q0_1 =μ  (λ x_. (λ k_q0_0. (λ k_q0_1. ((k_q0_1 x_) \/ (((input_q0_1 (x_ + 1)) k_q0_1) k_q0_1)))));
+g_q0_1 =μ  (λ repeat'_q0_1. (λ sub'_q0_1. (λ z_. (λ x_. (((repeat'_q0_1 (sub'_q0_1 x_)) (sub'_q0_1 x_)) z_)))));
+sub_q0_1 =μ  (λ x_. (λ y_. (λ k_q0_0. (λ k_q0_1. (k_q0_1 (y_ - x_))))));
+fin_q0_1 =μ  True;
+repeat_q0_1 =μ  (λ f_q0_0. (λ f_q0_1. (λ x_. ((<=(x_, 0) /\ fin_q0_1) \/ (not <=(x_, 0) /\ ((((f_q0_1 x_) ((repeat_q0_1 f_q0_1) f_q0_1)) ((repeat_q0_1 f_q0_1) f_q0_1)) /\ (((repeat_q0_1 f_q0_1) f_q0_1) (x_ - 1))))))));
+},
+ (((((main_q0_0 repeat_q0_1) sub_q0_1) g_q0_1) input_q0_1) n_))
