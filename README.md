@@ -13,3 +13,6 @@ This software is licensed under the Apache License, Version 2.0 (http://www.apac
 # Author
 hz2 was developed by Hiroki Oshikawa and maintained by Naoki Kobayashi.
 
+# References
+Keiichi Watanabe, Takeshi Tsukada, Hiroki Oshikawa, Naoki Kobayashi:
+"Reduction from branching-time property verification of higher-order programs to HFL validity checking", Proceedings of PEPM 2019, pp.22-34, 2019.
